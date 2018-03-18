@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+        <script src="app.js"></script>
+        <script src="services/mainServices.js"></script>
+        <script src="controllers/loginController.js"></script>
+        <style>
+            table{border:1px solid;border-collapse: collapse;}
+            table td{border:1px solid;}
+        </style> 
+    </head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl" style="width:235px; margin:50px auto 0px;">
+        <table >
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" ng-model="login.email"/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" ng-model="login.password"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center"><input type="button" value="submit" ng-click="sendInfo1(login)" /></td>
+            </tr>
+            <tr>
+                <td><a href="">Signup</a></td>
+                <td style="text-align: right"><a href="" >forgot</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
